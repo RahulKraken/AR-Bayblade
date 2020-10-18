@@ -400,6 +400,7 @@ GameObject:
   - component: {fileID: 1883223429794067220}
   - component: {fileID: 8783120246085657621}
   - component: {fileID: -8684261393587203863}
+  - component: {fileID: 7066217261470051470}
   m_Layer: 0
   m_Name: Player3_Defender
   m_TagString: Player
@@ -541,7 +542,8 @@ MonoBehaviour:
   observableSearch: 2
   Synchronization: 3
   OwnershipTransfer: 0
-  ObservedComponents: []
+  ObservedComponents:
+  - {fileID: -8684261393587203863}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -570,6 +572,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9415b3e7a0233b4e84c7f4afebc1b3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  synchronizeVelocity: 1
+  synchronizeAngularVelocity: 1
+  isTeleportEnabled: 1
+  teleportIfDistanceGreaterThan: 1
+--- !u!114 &7066217261470051470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2269595059983960058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1abbb5b090854b44806e6c159cf6564, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spinnerScript: {fileID: 8879543555087640780}
+  spinSpeedBar_Image: {fileID: 2269595059424446845}
+  spinSpeedRatio_Text: {fileID: 512058580104729394}
 --- !u!1 &2269595060150874238
 GameObject:
   m_ObjectHideFlags: 0
